@@ -1,0 +1,1 @@
+$(function(){function a(){var a=$(window).scrollTop()+$(window).height();n.each(function(n){x=$(this).offset().top+40,x<a&&$(this).addClass("fadeInUp")})}var n=$(".animated");a(),$(window).scroll(function(){a()})}),$(function(){FastClick.attach(document.body);var a=$("header"),n=$("header a, footer nav a");n.click(function(){a.addClass("animate-header-out")})});
