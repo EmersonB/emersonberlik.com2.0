@@ -21,18 +21,25 @@ var listener = app.listen(app.get('port'), function() {
 
 app.get('/', function(req, res) {
 
-  res.sendFile(__dirname+'/index.html');
+  res.sendFile(__dirname+'/home.html');
 
 });
 
-app.get('/about', function(req, res) {
-
-  res.sendFile(__dirname+'/about.html');
-
-});
 
 app.get('/risktyle/privatepolicy', function(req, res) {
 
   res.sendFile(__dirname+'/files/BerlikLabsPrivatePolicy.docx');
+
+});
+
+app.get('/privatepolicy', function(req, res) {
+
+  res.sendFile(__dirname+'/files/BerlikLabsPrivatePolicy.docx');
+
+});
+
+app.get('/resume', function(req, res) {
+
+  res.sendFile(__dirname+'/files/emersonberlikresume.pdf');
 
 });
