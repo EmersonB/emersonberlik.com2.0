@@ -21,6 +21,12 @@ app.get('/', function(req, res) {
 
 });
 
+app.get('/.well-known/acme-challenge/mgicD-bfw1BkGhVPjlGjqo7hhRnprOLkIrDqxAheHDo', function(req, res) {
+
+  res.send('mgicD-bfw1BkGhVPjlGjqo7hhRnprOLkIrDqxAheHDo.G6lO1BSz-SrVAiDgA3Z6-o9sdUlLxl_N1YBRTCIpQIQ');
+
+});
+
 
 app.get('/risktyle/privatepolicy', function(req, res) {
 
