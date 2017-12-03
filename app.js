@@ -6,6 +6,7 @@ var Handlebars = require('handlebars');
 var bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded());
+var router = express.Router();
 
 
 
@@ -21,12 +22,11 @@ app.get('/', function(req, res) {
 
 });
 
-app.get('/.well-known/acme-challenge/ScAgJW40zG95wvJHsxfDx-5r08i9V0t6cAFlvVikUWo', function(req, res) {
+app.get('/sios', function(req, res) {
 
-  res.send('ScAgJW40zG95wvJHsxfDx-5r08i9V0t6cAFlvVikUWo.G6lO1BSz-SrVAiDgA3Z6-o9sdUlLxl_N1YBRTCIpQIQ');
+  res.sendFile(__dirname+'/home.html');
 
 });
-
 
 app.get('/risktyle/privatepolicy', function(req, res) {
 
